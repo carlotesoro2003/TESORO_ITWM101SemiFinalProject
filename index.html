@@ -402,6 +402,10 @@ letter-spacing: 0.2px;
     display: none;
   }
 
+  .contact h2{
+    font-size: 30px;
+  }
+
   .nav-link{
     color: var(--light-text-color, #FFF);
     text-align: center;
@@ -416,46 +420,11 @@ letter-spacing: 0.2px;
     letter-spacing: 0.2px;
   }
 
-  .header h4{
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+ 
   
   .header nav{
     background: var(--dark-background-color, #252B42);
   }
-
-
-  .features .row{
-    gap: 30px;
-    
-  }
-
-  
-
- .testimonials .row{
-    gap: 30px;
- }
-
- .team .row{
-  gap: 30px;
- }
-
- .footer .nav-row{
-  gap: 1px;
- }
-
- .footer hr{
-  display: none;
- }
-
- .white .col-md-4{
-  text-align: left;
- }
- 
- .contact .col-md-6{
-  width: 100%;
- }
 
  .img-wrapper {
   position: relative;
@@ -487,7 +456,16 @@ letter-spacing: 0.2px;
 }
 
 
+}
 
+@media only screen and (min-width:1200px){
+  .toggler-icon::after {
+				position: absolute;
+				content: url(img/navbar-toggler-icon.svg);
+				top: 1.625rem;
+				right: 3.125rem;
+				cursor: pointer;
+			}
 }
 
 
@@ -496,7 +474,7 @@ letter-spacing: 0.2px;
 <body>
   <section class="header">
     <div class="bg-img" style=" background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.40) 1.92% 189.57%),url(img/bg.png); min-height: 100vh; background-repeat: no-repeat; background-position: center;background-size: cover;"> 
-      <nav class="navbar navbar-expand-xl navbar-dark">
+      <nav class="navbar navbar-expand-xl navbar-dark toggler-icon">
         <div class="container pt-2 px-5">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">Publist</a>
@@ -538,8 +516,8 @@ letter-spacing: 0.2px;
       
   
       <div class="container p-5">
-        <div class="row  gx-5 ">
-          <div class=" col align-self-center text-lg-start text-center m-lg-0 m-4">
+        <div class="row">
+          <div class="col pt-5 text-xl-start text-center m-xl-0 m-4">
             <h1 class="mb-4">Finance and Consultancy Solution</h1>
             <h4 class="mb-4">We know how large objects will act, but things on a small scale.</h4>
             <div class="row">
@@ -602,8 +580,8 @@ letter-spacing: 0.2px;
    
   </section>  
 
-  <section class="features w-auto px-5 h-auto" style="background: var(--dark-background-color, #252B42);">
-    <div class="container container p-5  gap-5">
+  <section class="features" style="background: var(--dark-background-color, #252B42);">
+    <div class="container px-xl-0 p-5">
       <div class="main-content text-center mt-5 ">
         <h2>Every Client Matters</h2>
         <p class="mb-5">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
@@ -697,7 +675,7 @@ letter-spacing: 0.2px;
 
   </section>
   
-  <section class="who  w-auto   px-5 h-auto" style="  background-image: linear-gradient(to bottom, #252B42 60%, #17213C 40%);">
+  <section class="who" style="  background-image: linear-gradient(to bottom, #252B42 60%, #17213C 40%);">
     <div class="container container p-5  gap-5">
       
       <div class="row who-row">
@@ -722,7 +700,7 @@ letter-spacing: 0.2px;
   </section>
 
 
-  <section class="testimonials h-auto w-auto px-5" style="background: var(--dark-background-color, #252B42);">
+  <section class="testimonials" style="background: var(--dark-background-color, #252B42);">
     <div class="container p-5  gap-5">
       <div class="row who-row pt-5 text-center">
         <h2>What Clients Say</h2>
@@ -732,7 +710,7 @@ letter-spacing: 0.2px;
       <div class="row mt-5">
 
         <div class="col-xl-4 pb-3">
-          <div class="card">
+          <div class="card p-4">
             <div class="stars d-flex  flex-start p-3">
               <i><img src="img/icn bxs-star.svg"></i>
               <i><img src="img/icn bxs-star.svg"></i>
@@ -758,7 +736,7 @@ letter-spacing: 0.2px;
         </div>
 
         <div class="col-xl-4 pb-3">
-          <div class="card" >
+          <div class="card p-4" >
             <div class="stars d-flex  flex-start p-3">
               <i><img src="img/icn bxs-star.svg"></i>
               <i><img src="img/icn bxs-star.svg"></i>
@@ -785,7 +763,7 @@ letter-spacing: 0.2px;
         </div>
 
         <div class="col-xl-4 pb-3">
-          <div class="card" >
+          <div class="card p-4" >
             <div class="stars d-flex  flex-start p-3">
               <i><img src="img/icn bxs-star.svg"></i>
               <i><img src="img/icn bxs-star.svg"></i>
@@ -814,7 +792,7 @@ letter-spacing: 0.2px;
     </div>
   </section> 
 
-  <section class="team h-auto w-auto px-5" style="background: var(--dark-background-color, #252B42);">
+  <section class="team" style="background: var(--dark-background-color, #252B42);">
     <div class="container p-5  gap-5">
       <div class="row who-row pt-5 text-center">
         <h2>Meet Our Team</h2>
